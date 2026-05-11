@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies (if any)..."
+  build:
+    commands:
+      - echo "Building the project..."
+      - sed -i 's/World/Cloud Student/g' index.html # A tiny "build" change
+artifacts:
+  files:
+    - index.html
